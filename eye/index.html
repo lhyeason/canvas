@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mouse</title>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<style type="text/css" media="screen">
+	html, body, div {
+		padding: 0;
+		margin: 0;
+	}
+	.move-area{/*normally use body*/
+	  /*width: 100vw;
+	  height: 100vh;*/
+	  padding: 10% 45%;
+	}
+	.container {
+	  width: 100%;
+	}
+	.eye {
+	  position: relative;
+	  display: inline-block;
+	  border-radius: 50%;
+	  height: 30px;
+	  width: 30px;
+	  background: #CCC;
+	}
+	.eye:after { /*pupil*/
+	  position: absolute;
+	  bottom: 17px;
+	  right: 10px;
+	  width: 10px;
+	  height: 10px;
+	  background: #000;
+	  border-radius: 50%;
+	  content: " ";
+	}
+</style>
+<body>
+	<div class="move-area">
+	  <div class='container'>
+	    <div class='eye'></div>
+	    <div class='eye'></div>
+	  </div>
+	</div>
+	<script type="text/javascript">
+		
+	//This is a pen based off of Codewoofy's eyes follow mouse. It is just cleaned up, face removed, and then made to be a little more cartoony. https://codepen.io/Codewoofy/pen/VeBJEP
+    $(".move-area").mousemove(function(event) {
+	  var eye = $(".eye");
+	  var x = (eye.offset().left) + (eye.width() / 2);
+	  var y = (eye.offset().top) + (eye.height() / 2);
+	  var rad = Math.atan2(event.pageY - y, event.pageX - x);
+
+	  // 180 由于css是以x轴正方向顺时针转动，而atan2得出的角度以x轴正方向逆时针转动，所以相差180度
+	  // 90 因为黑色眼珠一开始就是垂直方向有90度
+	  var rot = rad * (180 / Math.PI) - 180 - 90; 
+
+	  eye.css({
+	    '-webkit-transform': 'rotate(' + rot + 'deg)',
+	    '-moz-transform': 'rotate(' + rot + 'deg)',
+	    '-ms-transform': 'rotate(' + rot + 'deg)',
+	    'transform': 'rotate(' + rot + 'deg)'
+	  });
+	});
+	</script>
+</body>
+</html>
