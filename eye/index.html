@@ -56,7 +56,6 @@
 	  // 180 由于css是以x轴正方向顺时针转动，而atan2得出的角度以x轴正方向逆时针转动，所以相差180度
 	  // 90 因为黑色眼珠一开始就是垂直方向有90度
 	  var rot = rad * (180 / Math.PI) - 180 - 90; 
-
 	  eye.css({
 	    '-webkit-transform': 'rotate(' + rot + 'deg)',
 	    '-moz-transform': 'rotate(' + rot + 'deg)',
