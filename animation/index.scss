@@ -1,0 +1,30 @@
+html, body, div {
+	padding: 0;
+	margin: 0;
+}
+.container {
+	width: 598px;
+	height: 494px;
+	.img {
+	    height: 100%;
+	    background-image: url('./img/tinified/pic1.jpg');
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	    animation: mymove 3s infinite ease;
+	}
+}
+@keyframes mymove {
+	@for $i from 1 through 37 {
+		100% * (2.6) * $i {
+			background-image: url('./img/tinified/pic' + #{$i} + '.jpg');
+		}
+	}     
+}
+
+@-webkit-keyframes mymove {
+	@for $i from 1 through 37 {
+		100% * (2.6) * $i {
+			background-image: url('./img/tinified/pic' + #{$i} + '.jpg');
+		}
+	}    
+}
