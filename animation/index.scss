@@ -1,30 +1,66 @@
 html, body, div {
 	padding: 0;
 	margin: 0;
+	overflow: hidden;
 }
 .container {
 	width: 598px;
 	height: 494px;
+	// animation: move 10s infinite ease;
+	// -webkit-animation: move 10s infinite ease;
 	.img {
 	    height: 100%;
 	    background-image: url('./img/tinified/pic1.jpg');
 	    background-repeat: no-repeat;
 	    background-position: center center;
-	    animation: mymove 3s infinite ease;
+	    animation: mymove 2s  linear infinite;
+	    -webkit-animation: mymove 2s  linear infinite;
+	    -webkit-backface-visibility: hidden;
 	}
 }
 @keyframes mymove {
-	@for $i from 1 through 37 {
-		100% * (2.6) * $i {
-			background-image: url('./img/tinified/pic' + #{$i} + '.jpg');
+	@for $i from 0 through 37 {
+		#{$i*2.6315}%{
+			background-image: url('./img/tinified/pic#{$i + 1}.jpg');
 		}
-	}     
+	}
+	100% {
+		background-image: url('./img/tinified/pic1.jpg');
+	}
 }
 
 @-webkit-keyframes mymove {
-	@for $i from 1 through 37 {
-		100% * (2.6) * $i {
-			background-image: url('./img/tinified/pic' + #{$i} + '.jpg');
+	@for $i from 0 through 37 {
+		#{$i*2.6315}%{
+			background-image: url('./img/tinified/pic#{$i + 1}.jpg');
 		}
-	}    
+	}
+	100% {
+		background-image: url('./img/tinified/pic1.jpg');
+	}
 }
+@keyframes move {
+	0% {
+		transform:translate(0,0);
+	}
+	40%,
+	60% {
+	 	transform:translate(200px,0);
+	}
+	100% {
+		transform:translate(400px,0);
+	}
+}
+@-webkit-keyframes mymove {
+	0% {
+		transform:translate(0,0);
+	}
+	40%,
+	60% {
+	 	transform:translate(200px,0);
+	}
+	100% {
+		transform:translate(400px,0);
+	}
+}
+

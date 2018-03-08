@@ -1,0 +1,193 @@
+html, body, div {
+  padding: 0;
+  margin: 0;
+  overflow: hidden; }
+
+.container {
+  width: 598px;
+  height: 494px; }
+  .container .img {
+    height: 100%;
+    background-image: url("./img/tinified/pic1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: mymove 2s  linear infinite;
+    -webkit-animation: mymove 2s  linear infinite;
+    -webkit-backface-visibility: hidden; }
+
+@keyframes mymove {
+  0% {
+    background-image: url("./img/tinified/pic1.jpg"); }
+  2.6315% {
+    background-image: url("./img/tinified/pic2.jpg"); }
+  5.263% {
+    background-image: url("./img/tinified/pic3.jpg"); }
+  7.8945% {
+    background-image: url("./img/tinified/pic4.jpg"); }
+  10.526% {
+    background-image: url("./img/tinified/pic5.jpg"); }
+  13.1575% {
+    background-image: url("./img/tinified/pic6.jpg"); }
+  15.789% {
+    background-image: url("./img/tinified/pic7.jpg"); }
+  18.4205% {
+    background-image: url("./img/tinified/pic8.jpg"); }
+  21.052% {
+    background-image: url("./img/tinified/pic9.jpg"); }
+  23.6835% {
+    background-image: url("./img/tinified/pic10.jpg"); }
+  26.315% {
+    background-image: url("./img/tinified/pic11.jpg"); }
+  28.9465% {
+    background-image: url("./img/tinified/pic12.jpg"); }
+  31.578% {
+    background-image: url("./img/tinified/pic13.jpg"); }
+  34.2095% {
+    background-image: url("./img/tinified/pic14.jpg"); }
+  36.841% {
+    background-image: url("./img/tinified/pic15.jpg"); }
+  39.4725% {
+    background-image: url("./img/tinified/pic16.jpg"); }
+  42.104% {
+    background-image: url("./img/tinified/pic17.jpg"); }
+  44.7355% {
+    background-image: url("./img/tinified/pic18.jpg"); }
+  47.367% {
+    background-image: url("./img/tinified/pic19.jpg"); }
+  49.9985% {
+    background-image: url("./img/tinified/pic20.jpg"); }
+  52.63% {
+    background-image: url("./img/tinified/pic21.jpg"); }
+  55.2615% {
+    background-image: url("./img/tinified/pic22.jpg"); }
+  57.893% {
+    background-image: url("./img/tinified/pic23.jpg"); }
+  60.5245% {
+    background-image: url("./img/tinified/pic24.jpg"); }
+  63.156% {
+    background-image: url("./img/tinified/pic25.jpg"); }
+  65.7875% {
+    background-image: url("./img/tinified/pic26.jpg"); }
+  68.419% {
+    background-image: url("./img/tinified/pic27.jpg"); }
+  71.0505% {
+    background-image: url("./img/tinified/pic28.jpg"); }
+  73.682% {
+    background-image: url("./img/tinified/pic29.jpg"); }
+  76.3135% {
+    background-image: url("./img/tinified/pic30.jpg"); }
+  78.945% {
+    background-image: url("./img/tinified/pic31.jpg"); }
+  81.5765% {
+    background-image: url("./img/tinified/pic32.jpg"); }
+  84.208% {
+    background-image: url("./img/tinified/pic33.jpg"); }
+  86.8395% {
+    background-image: url("./img/tinified/pic34.jpg"); }
+  89.471% {
+    background-image: url("./img/tinified/pic35.jpg"); }
+  92.1025% {
+    background-image: url("./img/tinified/pic36.jpg"); }
+  94.734% {
+    background-image: url("./img/tinified/pic37.jpg"); }
+  97.3655% {
+    background-image: url("./img/tinified/pic38.jpg"); }
+  100% {
+    background-image: url("./img/tinified/pic1.jpg"); } }
+@-webkit-keyframes mymove {
+  0% {
+    background-image: url("./img/tinified/pic1.jpg"); }
+  2.6315% {
+    background-image: url("./img/tinified/pic2.jpg"); }
+  5.263% {
+    background-image: url("./img/tinified/pic3.jpg"); }
+  7.8945% {
+    background-image: url("./img/tinified/pic4.jpg"); }
+  10.526% {
+    background-image: url("./img/tinified/pic5.jpg"); }
+  13.1575% {
+    background-image: url("./img/tinified/pic6.jpg"); }
+  15.789% {
+    background-image: url("./img/tinified/pic7.jpg"); }
+  18.4205% {
+    background-image: url("./img/tinified/pic8.jpg"); }
+  21.052% {
+    background-image: url("./img/tinified/pic9.jpg"); }
+  23.6835% {
+    background-image: url("./img/tinified/pic10.jpg"); }
+  26.315% {
+    background-image: url("./img/tinified/pic11.jpg"); }
+  28.9465% {
+    background-image: url("./img/tinified/pic12.jpg"); }
+  31.578% {
+    background-image: url("./img/tinified/pic13.jpg"); }
+  34.2095% {
+    background-image: url("./img/tinified/pic14.jpg"); }
+  36.841% {
+    background-image: url("./img/tinified/pic15.jpg"); }
+  39.4725% {
+    background-image: url("./img/tinified/pic16.jpg"); }
+  42.104% {
+    background-image: url("./img/tinified/pic17.jpg"); }
+  44.7355% {
+    background-image: url("./img/tinified/pic18.jpg"); }
+  47.367% {
+    background-image: url("./img/tinified/pic19.jpg"); }
+  49.9985% {
+    background-image: url("./img/tinified/pic20.jpg"); }
+  52.63% {
+    background-image: url("./img/tinified/pic21.jpg"); }
+  55.2615% {
+    background-image: url("./img/tinified/pic22.jpg"); }
+  57.893% {
+    background-image: url("./img/tinified/pic23.jpg"); }
+  60.5245% {
+    background-image: url("./img/tinified/pic24.jpg"); }
+  63.156% {
+    background-image: url("./img/tinified/pic25.jpg"); }
+  65.7875% {
+    background-image: url("./img/tinified/pic26.jpg"); }
+  68.419% {
+    background-image: url("./img/tinified/pic27.jpg"); }
+  71.0505% {
+    background-image: url("./img/tinified/pic28.jpg"); }
+  73.682% {
+    background-image: url("./img/tinified/pic29.jpg"); }
+  76.3135% {
+    background-image: url("./img/tinified/pic30.jpg"); }
+  78.945% {
+    background-image: url("./img/tinified/pic31.jpg"); }
+  81.5765% {
+    background-image: url("./img/tinified/pic32.jpg"); }
+  84.208% {
+    background-image: url("./img/tinified/pic33.jpg"); }
+  86.8395% {
+    background-image: url("./img/tinified/pic34.jpg"); }
+  89.471% {
+    background-image: url("./img/tinified/pic35.jpg"); }
+  92.1025% {
+    background-image: url("./img/tinified/pic36.jpg"); }
+  94.734% {
+    background-image: url("./img/tinified/pic37.jpg"); }
+  97.3655% {
+    background-image: url("./img/tinified/pic38.jpg"); }
+  100% {
+    background-image: url("./img/tinified/pic1.jpg"); } }
+@keyframes move {
+  0% {
+    transform: translate(0, 0); }
+  40%,
+	60% {
+    transform: translate(200px, 0); }
+  100% {
+    transform: translate(400px, 0); } }
+@-webkit-keyframes mymove {
+  0% {
+    transform: translate(0, 0); }
+  40%,
+	60% {
+    transform: translate(200px, 0); }
+  100% {
+    transform: translate(400px, 0); } }
+
+/*# sourceMappingURL=index.css.map */
