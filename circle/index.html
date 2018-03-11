@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>circle</title>
+</head>
+<body>
+<svg width="22px" height="22px">
+    <circle r="8" cx="11" cy="11" fill="none" stroke="#2492fc"/>
+
+</svg>
+
+<svg width="100px" height="100px">
+    <circle r="40" cx="50" cy="50"/>
+</svg>
+
+<svg width="600px" height="400px" style="background: red"">
+    <path stroke="#000" id="svg_1" d="m354.9551,145.85901l160.04485,0l-129.47879,73.18043l49.45766,118.40979l-129.47884,-73.18243l-129.47882,73.18243l49.45767,-118.40979l129.47627,-73.18043z" stroke-width="1.5" fill=""/>
+    <path stroke="#000" id="svg_2" d="m80,126.85901l160.04488,0l49.4551,-118.40979l49.45512,118.40979l160.04485,0l-129.47879,73.18043l49.45766,118.40979l-129.47884,-73.18243l-129.47882,73.18243l49.45767,-118.40979l-129.47883,-73.18043z" stroke-width="1.5" fill="yellow"/>
+</svg>
+
+<svg>
+    <circle id="orange-circle" r="30" cx="50" cy="50" fill="orange" />
+
+    <rect id="blue-rectangle" width="50" height="50" x="25" y="200" fill="#0099cc"></rect>
+
+    <animate
+            xlink:href="#orange-circle"
+            attributeName="cx"
+            from="50"
+            to="450"
+            dur="5s"
+            begin="click"
+            fill="freeze"
+            d="circ-anim" />
+
+    <animate
+            xlink:href="#blue-rectangle"
+            attributeName="x"
+            from="50"
+            to="425"
+            dur="5s"
+            begin="circ-anim.begin + 1s"
+            fill="freeze"
+            id="rect-anim" />
+</svg>
+
+</body>
+
+</html>
