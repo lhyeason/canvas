@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>fullpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.4/jquery.fullPage.min.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font: 16px/1.8 "Microsoft Yahei",verdana;
+    }
+
+    .section1 {
+        background: url(./img/section1.jpg) no-repeat 50% 50%;
+        background-size: cover;
+    }
+
+    .text {
+        padding: 0 50px;
+        font-size: 60px;
+        color: #14bf98;
+        background: -webkit-gradient(linear, 0 0, right 0, from(rgb(16, 192, 154)), to(rgb(195, 36, 187)));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: rotateY(0);
+        transition: all 1.5s;
+    }
+
+    .text:hover {
+        transform: rotateY(180deg);
+    }
+
+    /*第二屏*/
+
+    .section2 {
+        background: #66f8ff;
+    }
+
+    .move-area{
+        width: 100%;
+        height: 100%;
+        display: table;
+        text-align: center;
+    }
+    .container {
+        width: 100%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .eye {
+        position: relative;
+        display: inline-block;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        background: #CCC;
+    }
+    .eye:after { /*pupil*/
+        position: absolute;
+        bottom: 17px;
+        right: 10px;
+        width: 10px;
+        height: 10px;
+        background: #000;
+        border-radius: 50%;
+        content: " ";
+    }
+
+
+    /*第三屏*/
+    .section3 {
+        background: url(./img/3-3.jpg) no-repeat 50% 300px;
+        background-size: 50%;
+    }
+
+
+
+
+    /*第四屏*/
+
+    .section4 {
+        background: #fff;
+    }
+
+
+
+
+</style>
+<body>
+    
+    <div id="fullpage" class="sections">   
+        <div class="section section1">
+            <div class="text">Your brain has two parts: left & right. Your left brain has nothing right, your right brain has nothing left.</div>
+        </div>
+        <div class="section section2">
+            <div class="move-area">
+                <div class='container'>
+                    <div class='eye'></div>
+                    <div class='eye'></div>
+                </div>
+            </div>
+        </div>
+        <div class="section section3">
+
+            <div class="circles">
+
+                <div class="circle">
+                    <div class="circle_control grab">
+                        <div class="circle_control_wrap">
+                            <div class="circle_control_hide">
+                                <div style="display:inline;width:450px;height:200px;">
+                                    <canvas width="900" height="450" style="width: 450px; height: 200px;">
+
+                                    </canvas>
+                                    <input type="text" value="0" class="dial" style="display: none; width: 0px; visibility: hidden;">
+                                </div>
+                            </div>
+
+        </div>
+        <div class="section section4">
+
+        </div>
+        <div class="section section5">
+
+        </div>
+        <div class="section section6">
+
+        </div>
+
+    </div>
+
+   
+</body>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.4/jquery.fullPage.min.js"></script>
+<script src="index.js"></script>
+</html>
